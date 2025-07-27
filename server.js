@@ -3,7 +3,7 @@ const app = express();
 const PORT = 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello from Node.js App deployed on AWS!");
+  res.send("Hello from Node.js App deployed on AWS...!");
 });
 
 app.listen(PORT, () => {
