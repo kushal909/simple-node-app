@@ -3,7 +3,21 @@ const app = express();
 const PORT = 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello from Node.js App deployed on AWS... kushal!");
+//   res.send("Hello from Node.js App deployed on AWS... kushal!");
+
+
+let arr =[
+    {
+    name:"abc"
+},    {
+    name:"abd"
+},
+{
+    name:"abe"
+}
+
+]
+res.json({message:"sucessfully get ", result :arr})
 });
 
 app.listen(PORT, '0.0.0.0', () => {
